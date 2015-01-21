@@ -56,7 +56,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>foreground</key>
 					<string>#808080</string><!-- nickel -->
 					<key>background</key>
-					<string>#fbffdb</string><!-- daffodil -->
+					<string>#efefef</string><!-- fbffdb daffodil -->
 				</dict>
 			</dict>
 			<!-- cfscript comments -->
@@ -72,7 +72,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>foreground</key>
 					<string>#808080</string><!-- nickel -->
 					<key>background</key>
-					<string>#fbffdb</string><!-- daffodil -->
+					<string>#efefef</string><!-- fbffdb daffodil -->
 				</dict>
 			</dict>
 			<!-- html comments -->
@@ -222,13 +222,13 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>cfml: generic: operators</string>
 				<key>scope</key>
-				<string>keyword.operator</string>
+				<string>keyword.operator, keyword.control.operator</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#009a1a</string><!-- grass -->
+					<string>#950000</string><!-- grass 009a1a -->
 				</dict>
 			</dict>
 			<!-- query operators -->
@@ -1057,6 +1057,121 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<string>#000000</string><!-- black -->
 					<key>background</key>
 					<string></string>
+				</dict>
+			</dict>
+			<!-- coldfusion components (cfc) -->
+			<!-- cfscript comments -->
+			<dict>
+				<key>name</key>
+				<string>cfc: comment</string>
+				<key>scope</key>
+				<string>source.cfscript.cfc comment</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#000000</string><!-- black -->
+					<key>background</key>
+					<string>#f9f9f9</string><!-- Banana -->
+				</dict>
+			</dict>
+			<!-- storage var -->
+			<dict>
+				<key>name</key>
+				<string>cfc: storage function</string>
+				<key>scope</key>
+				<string>storage.type.function</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#990000</string><!-- teal #339966 -->
+				</dict>
+			</dict>
+			<!-- storage function -->
+			<dict>
+				<key>name</key>
+				<string>cfc: storage</string>
+				<key>scope</key>
+				<string>storage.modifier.var</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#6699cd</string><!-- sky -->
+				</dict>
+			</dict>
+			<!-- cfc quoted strings -->
+			<dict>
+				<key>name</key>
+				<string>cfc: quoted component string</string>
+				<key>scope</key>
+				<string>meta.class.component string.quoted.double.cfscript,meta.class.component string.quoted.single.cfscript</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#0000ff</string><!-- blueberry -->
+				</dict>
+			</dict>
+			<!-- cfc cfscript quoted strings -->
+			<dict>
+				<key>name</key>
+				<string>cfc: quoted script string</string>
+				<key>scope</key>
+				<string>source.cfscript.cfc string.quoted.double.cfscript,source.cfscript.cfc string.quoted.single.cfscript</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#008080</string><!-- teal -->
+				</dict>
+			</dict>
+			<!-- cfc cfscript function-call -->
+			<dict>
+				<key>name</key>
+				<string>cfc: functions</string>
+				<key>scope</key>
+				<string>source.cfscript.cfc entity.name.function-call,source.cfscript.cfc support.function</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#990000</string><!-- blueberry -->
+				</dict>
+			</dict>
+			<!-- cfc cfscript function/parameter -->
+			<dict>
+				<key>name</key>
+				<string>cfc: function</string>
+				<key>scope</key>
+				<string>source.cfscript.cfc entity.name.function.cfscript,source.cfscript.cfc variable.parameter</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#5400a6</string><!-- blueberry -->
+				</dict>
+			</dict>
+			<!-- cfc cfscript variable -->
+			<dict>
+				<key>name</key>
+				<string>cfc: function</string>
+				<key>scope</key>
+				<string>source.cfscript.cfc variable</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#5400a6</string><!-- blueberry -->
 				</dict>
 			</dict>
 		</array>
